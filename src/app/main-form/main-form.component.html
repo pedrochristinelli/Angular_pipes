@@ -1,0 +1,49 @@
+<h1 class="title has-text-centered"> Pipes em Angular.</h1>
+<div class="columns has-text-centered is-centered">
+   <div class="column is-6">
+      <div class="columns">
+         <div class="column has-text-centered">
+            <div class="field">
+               <label class="label">Numero de placa (Regra do padrão antigo)</label>
+               <input [(ngModel)]="inputPlacaAntiga" type="text" placeholder="Digite um número de uma placa" class="input">
+               <div class="field">
+                  <label class="label">Resultado: {{inputPlacaAntiga | placaAntiga}}</label>
+               </div>
+            </div>
+            <hr>
+            <div class="field">
+               <label class="label">Numero de placa (Regra mercosul)</label>
+               <input [(ngModel)]="inputPlacaMercoSul"  type="text" placeholder="Digite um número de uma placa" class="input">
+               <div class="field">
+                  <label class="label">Resultado: {{inputPlacaMercoSul | placaMercosul}}</label>
+               </div>
+            </div>
+            <hr>
+            <div class="field">
+               <label class="label">Numero de telefone(BR)</label>
+               <input [(ngModel)]="inputTelefoneBr"  type="text" placeholder="Digite um número de telefone" class="input">
+               <div class="field">
+                  <label class="label">Resultado: {{inputTelefoneBr | telefoneBrasileiro}}</label>
+               </div>
+            </div>
+            <hr>
+            <div class="field">
+               <label class="label">Numero de telefone(US)</label>
+               <input [(ngModel)]="inputTelefoneUsa" type="text" placeholder="Digite um número de telefone" class="input">
+               <div class="field">
+                  <label class="label">Resultado: {{inputTelefoneUsa | telefoneAmericano}}</label>
+               </div>
+            </div>
+            <hr>
+            <div class="field">
+               <label class="label">Nome completo(Regra ABNT)</label>
+               <input [(ngModel)]="inputNome" type="text" placeholder="Digite o nome completo de uma pessoa" class="input">
+               <div class="field">
+                  <label class="label">Resultado: {{inputNome | nomeAbnt}}</label>
+               </div>
+            </div>
+            <hr>
+         </div>
+      </div>
+   </div>
+</div>
