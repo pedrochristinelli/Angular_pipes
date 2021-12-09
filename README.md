@@ -1,6 +1,7 @@
 # AngularPipes
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.6.
+In this project i'll implemente some custom pipes in angular!
 
 ## Development server
 
